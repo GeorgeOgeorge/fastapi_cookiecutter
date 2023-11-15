@@ -1,0 +1,5 @@
+{
+    "project_name": "fastapi_api",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+    "python_version": 3.11
+}
