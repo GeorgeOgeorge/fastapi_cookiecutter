@@ -5,10 +5,12 @@ from typing import Callable
 
 from fastapi import FastAPI, Request, Response
 from fastapi.responses import JSONResponse
-from app.config import get_settings
+from sqlalchemy.orm import declarative_base
 
+from app.config import get_settings
 from app.database.db_factory import DatabaseManager
 
+base = declarative_base()
 app_settings = get_settings()
 db_manager = DatabaseManager(main_db="alfred", db_url=app_settings.database_url)
 logger = logging.getLogger("app")
