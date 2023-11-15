@@ -1,5 +1,13 @@
 {
     "project_name": "fastapi_api",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
-    "python_version": 3.11
+    "python_version": 3.11,
+    "module": "foo",
+    "app_host": "0.0.0.0",
+    "app_port": 8080,
+    "app_api_token": "api_token",
+    "db_user": null,
+    "db_pass": null,
+    "db_host": null,
+    "db_port": null
 }
